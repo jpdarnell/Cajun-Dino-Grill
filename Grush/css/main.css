@@ -1,0 +1,131 @@
+* {
+    font-size: 18px;
+}
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: #b7b7b7;
+}
+.header {
+    font-family: 'Jolly Lodger', serif;
+    background-color: #079BAD;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.header-logo {
+    width: 7rem;
+}
+.nav {
+    display: flex;
+    justify-content: flex-start;
+}
+.nav li {
+    display: inline-block;
+    margin-left: 2rem;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover {
+    text-decoration: underline;
+    color: #7AD75A;
+}
+.nav a:active {
+    text-decoration: underline;
+    color: #7ef058;
+}
+.hero {
+    font-family: "Hanalei Fill", serif;
+    display: flex;
+    background-color: #7AD75A;
+    color: black;
+    max-height: 250px;
+}
+.hero h1 {
+    font-size: 2rem;
+    width: 100%;
+    margin-left: 5%;
+    text-align: center;
+}
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-height: 250px;
+}
+.hero-image {
+    margin-left: auto;
+}
+main {
+    text-align: center;
+    padding: 0 7rem 0 7rem;
+}
+.mission {
+    font-size: 2rem;
+}
+.social-media {
+    text-align: center;
+    width: 100%;
+    color: black;
+    padding: 20px 0 20px 0;
+    background-color: white;
+}
+.social-media a {
+    color: black;
+    margin: 0 8px 0 8px;
+    text-decoration: none;
+    font-size: 6rem;
+    padding: 0 20px 0 20px;
+}
+.social-media a:hover {
+    box-shadow: 0 0 5px 5px #079BAD;
+    border-radius: 10px;
+}
+footer {
+    font-family: 'Nunito', serif;
+    bottom: 0;
+    position: sticky;
+    text-align: center;
+    background-color: #3A4B2D;
+    padding: 7px 0 7px 0;
+    color: aliceblue;
+    border-top: 1px solid aliceblue;
+}
+.hearts {
+    font-size: 0.6rem;
+    margin: auto;
+    white-space: nowrap;
+}
+.matt-amanda {
+    width: 600px;
+    margin: auto;
+}
+.images img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
